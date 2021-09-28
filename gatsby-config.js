@@ -4,12 +4,12 @@ module.exports = {
     title: "personal-website",
   },
   plugins: [
-    `gatsby-plugin-postcss`, 
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-tsconfig-paths`,
       options: {
-        extensions: [".ts", ".tsx", ".js", ".jsx"]
+        extensions: [".ts", ".tsx", ".js", ".jsx"],
       },
-    }
+    },
   ],
 };
