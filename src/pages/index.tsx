@@ -1,8 +1,17 @@
 import React from "react";
+
+import { Hero } from "@src/components/hero";
+import { SecondPart } from "@src/components/second-part";
+
 import "@src/styles/global.css";
 
 const IndexPage: React.FC = () => {
-  return <h1 className="m-8">Hello there!</h1>;
+  return (
+    <main>
+      <Hero />
+      <SecondPart />
+    </main>
+  );
 };
 
 export default IndexPage;
