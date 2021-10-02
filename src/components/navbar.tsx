@@ -1,6 +1,6 @@
 import React from "react";
 
-import { menuIcon } from "./navbar.module.css";
+import { menuIcon, activated } from "./navbar.module.css";
 
 const Navbar: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = React.useState<boolean>(false);
@@ -12,9 +12,11 @@ const Navbar: React.FC = () => {
         onClick={() => {
           setIsNavOpen(!isNavOpen);
         }}
-        className="w-12 h-10 relative"
+        className="w-10 h-10 relative"
       >
-        <span className={menuIcon} />
+        <span className={`${menuIcon} ${isNavOpen ? activated : ""}`} />
+        <span className={`${menuIcon} ${isNavOpen ? activated : ""}`} />
+        <span className={`${menuIcon} ${isNavOpen ? activated : ""}`} />
       </button>
     </div>
   );
