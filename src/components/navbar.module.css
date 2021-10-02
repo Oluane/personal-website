@@ -1,0 +1,29 @@
+.menuIcon {
+  height: 2px;
+  width: 100%;
+  display: block;
+  background: grey;
+  background: linear-gradient(90deg, rgba(128,128,128,1) 23%, rgba(0,0,0,0) 24%, rgba(80,80,80,0) 38%, rgba(165,165,165,1) 39%);
+  border-radius: 2px;
+}
+
+.menuIcon:before, 
+.menuIcon:after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: grey;
+  background: linear-gradient(90deg, rgba(165,165,165,1) 61%, rgba(0,0,0,0) 62%, rgba(80,80,80,0) 76%, rgba(128,128,128,1) 77%);
+  position: absolute;
+  border-radius: 2px;
+}
+
+.menuIcon:before{
+  top: 4px;
+  left: 0;
+}
+
+.menuIcon:after{
+  bottom: 4px;
+  left: 0;
+}
