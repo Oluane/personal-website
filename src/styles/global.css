@@ -4,7 +4,7 @@
   html {
     /* This font size means that '1rem' is exactly equal to '10px', which makes setting REM values very simple. */
     font-size: 62.5%;
-    /* background-color: hsl(240, 14%, 10%); */
+    background-color: hsl(240, 14%, 10%);
   }
 
   * {
@@ -14,6 +14,7 @@
   body {
     font-size: 1.6rem;
     line-height: 1;
+    overflow-x: hidden;
   }
 
   h1 {
