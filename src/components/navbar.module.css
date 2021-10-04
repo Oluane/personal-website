@@ -3,9 +3,9 @@
   width: 100%;
   display: block;
   background: grey;
-  background: linear-gradient(90deg, rgba(128,128,128,1) 23%, rgba(0,0,0,0) 24%, rgba(80,80,80,0) 38%, rgba(165,165,165,1) 39%);
+  background: linear-gradient(90deg, rgba(128,128,128,1) 23%, rgba(0,0,0,0) 24%, rgba(0,0,0,0) 38%, rgba(165,165,165,1) 39%);
   border-radius: 0.2rem;
-  transition: transform 500ms, margin 250ms, height 500ms, opacity 350ms;
+  transition: transform 550ms 100ms, margin 250ms, height 550ms, opacity 350ms;
 }
 
 .menuIcon:nth-of-type(2) {
@@ -33,3 +33,40 @@
 .activated.menuIcon:nth-of-type(3) {
   opacity: 0;
 }
+
+.menuTransition {
+  transition: width 750ms ease-in, height 750ms ease-in, top 750ms ease-in, right 750ms ease-in;
+}
+
+ul {
+  transition: opacity 350ms ease;
+}
+
+ul.activated {
+  transition: opacity 1s ease-out 650ms ;
+}
+
+li:nth-child(2):before, li:nth-child(2):after, li:nth-child(3):after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.15rem;
+  border-radius: 0.2rem;
+  position: relative;
+  background-color: rgba(165,165,165, 0);
+  opacity: 0;
+}
+
+li.activated:nth-child(2):before, li.activated:nth-child(2):after, li.activated:nth-child(3):after {
+  opacity: 1;
+  background-color: rgba(165,165,165,1);
+  background-image: linear-gradient(90deg, rgba(22, 22, 29, 1) 27%, rgba(22, 22, 29, 0) 86%, rgba(22, 22, 29, 1) 92%, rgba(22, 22, 29, 1) 93%, rgba(22, 22, 29, 0) 97%);
+}
+
+li:nth-child(2):before {
+ top: -2rem;
+}
+
+li:nth-child(2):after, li:nth-child(3):after {
+  bottom: -2rem;
+ }

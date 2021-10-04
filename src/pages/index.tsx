@@ -1,4 +1,5 @@
 import "@src/styles/global.css";
+import "@fontsource/megrim";
 
 import React from "react";
 
