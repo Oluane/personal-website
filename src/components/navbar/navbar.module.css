@@ -2,7 +2,7 @@
   height: 0.2rem;
   width: 100%;
   display: block;
-  background: grey;
+  background: rgba(165,165,165,1);
   background: linear-gradient(90deg, rgba(128,128,128,1) 23%, rgba(0,0,0,0) 24%, rgba(0,0,0,0) 38%, rgba(165,165,165,1) 39%);
   border-radius: 0.2rem;
   transition: transform 550ms 100ms, margin 250ms, height 550ms, opacity 350ms;
@@ -49,10 +49,10 @@ ul.activated {
 li:nth-child(2):before, li:nth-child(2):after, li:nth-child(3):after {
   content: "";
   display: block;
-  width: 100%;
+  width: 80%;
   height: 0.15rem;
   border-radius: 0.2rem;
-  position: relative;
+  position: absolute;
   background-color: rgba(165,165,165, 0);
   opacity: 0;
 }
@@ -65,8 +65,10 @@ li.activated:nth-child(2):before, li.activated:nth-child(2):after, li.activated:
 
 li:nth-child(2):before {
  top: -2rem;
+ right: 0;
 }
 
 li:nth-child(2):after, li:nth-child(3):after {
   bottom: -2rem;
+  right: 0;
  }

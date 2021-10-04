@@ -32,14 +32,14 @@ const Navbar: React.FC = () => {
             <li className={`mb-16 ${isNavOpen ? activated : ""}`}>
               <a href="#">ABOUT</a>
             </li>
-            <li className={`mb-16 ${isNavOpen ? activated : ""}`}>
+            <li className={`mb-16 relative ${isNavOpen ? activated : ""}`}>
               <a href="#">SKILLS</a>
             </li>
-            <li className={`mb-16 ${isNavOpen ? activated : ""}`}>
-              <a href="#">RANDOM</a>
+            <li className={`mb-16 relative ${isNavOpen ? activated : ""}`}>
+              <a href="#">PROJECTS</a>
             </li>
             <li className="">
-              <a href="#">PROJECTS</a>
+              <a href="#">RANDOM</a>
             </li>
           </ul>
         </nav>
