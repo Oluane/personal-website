@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    // siteUrl: "https://www.yourdomain.tld",
     title: "personal-website",
   },
   plugins: [
@@ -12,7 +12,4 @@ module.exports = {
       },
     },
   ],
-  flags: {
-    FAST_REFRESH: true,
-  },
 };
