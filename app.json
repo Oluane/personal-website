@@ -1,0 +1,13 @@
+{
+  "name": "Pauline Roche personal website",
+  "description": "This is my personal website",
+  "repository": "https://github.com/Oluane/personal-website",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }, 
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    }
+  ]
+}
