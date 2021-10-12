@@ -10,7 +10,7 @@ import { Layout } from "@src/components/layout/layout";
 
 const IndexPage: React.FC = () => {
   return (
-    <main className="h-screen overflow-y-hidden">
+    <main className="h-screen overflow-y-hidden ">
       <Layout>
         <Hero />
         {/* <SecondPart /> */}
