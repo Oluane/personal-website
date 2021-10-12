@@ -38,10 +38,6 @@
     "tailwindcss": "2.2.16",
     "typescript": "4.4.3"
   },
-  "engines": {
-    "node": ">=14.8",
-    "yarn": ">=1.22.4"
-  },
   "browserslist": [
     "last 2 versions, > 0.25%, not dead"
   ],

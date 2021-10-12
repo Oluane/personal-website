@@ -33,22 +33,22 @@
   box-shadow: 1744px 122px #FFF , 134px 1321px #FFF , 92px 859px #FFF , 235px 1045px #FFF , 366px 912px #FFF , 491px 942px #FFF , 14px 1831px #FFF , 582px 476px #FFF , 588px 1230px #FFF , 1520px 1343px #FFF , 1671px 203px #FFF , 550px 341px #FFF , 1491px 549px #FFF , 558px 161px #FFF , 896px 1823px #FFF , 999px 1463px #FFF , 1557px 636px #FFF , 1754px 1307px #FFF , 1682px 1494px #FFF , 703px 1707px #FFF , 1945px 1847px #FFF , 1151px 1320px #FFF , 980px 144px #FFF , 478px 948px #FFF , 109px 1762px #FFF , 558px 255px #FFF , 719px 1820px #FFF , 588px 748px #FFF , 1899px 174px #FFF , 841px 1771px #FFF , 571px 1588px #FFF , 1155px 353px #FFF , 1879px 1220px #FFF , 1782px 870px #FFF , 407px 1238px #FFF , 1141px 63px #FFF , 1147px 1097px #FFF , 1406px 159px #FFF , 637px 1215px #FFF , 694px 1114px #FFF , 1536px 727px #FFF , 1708px 1512px #FFF , 1147px 880px #FFF , 684px 988px #FFF ;
 }
 
-.wip, span {
+.wip, div>span {
   font-size: 5rem;
   filter: drop-shadow(0px 0px 2px #F3F4F6) drop-shadow(0px 1px 0px #831843) drop-shadow(-1px 0px 0px #312E81);
 }
 
-span {
+div>span {
   animation-iteration-count: infinite;
   animation-name: ellipsis;
   animation-duration: 3s;
 }
 
-span:nth-of-type(2) {
+div>span:nth-of-type(2) {
   animation-delay: 0.2s;
 }
 
-span:nth-of-type(3) {
+div>span:nth-of-type(3) {
   animation-delay: 0.4s;
 }
 
