@@ -5,15 +5,16 @@ import "@fontsource/lato";
 import React from "react";
 
 import { Hero } from "@src/components/hero/hero";
-import { Navbar } from "@src/components/navbar/navbar";
-import { SecondPart } from "@src/components/second-part";
+import { Layout } from "@src/components/layout/layout";
+// import { SecondPart } from "@src/components/second-part";
 
 const IndexPage: React.FC = () => {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <SecondPart />
+    <main className="h-screen overflow-y-hidden">
+      <Layout>
+        <Hero />
+        {/* <SecondPart /> */}
+      </Layout>
     </main>
   );
 };
