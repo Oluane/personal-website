@@ -49,7 +49,7 @@ ul.activated {
   transition: opacity 1s ease-out 650ms ;
 }
 
-li:nth-child(2):before, li:nth-child(2):after, li:nth-child(3):after {
+li:nth-child(2):before, li:nth-child(2):after {
   content: "";
   display: block;
   width: 80%;
@@ -60,7 +60,7 @@ li:nth-child(2):before, li:nth-child(2):after, li:nth-child(3):after {
   opacity: 0;
 }
 
-li.activated:nth-child(2):before, li.activated:nth-child(2):after, li.activated:nth-child(3):after {
+li.activated:nth-child(2):before, li.activated:nth-child(2):after {
   opacity: 1;
   background-color: rgba(243, 244, 246, 1);
   background-image: linear-gradient(90deg, rgba(22, 22, 29, 1) 23%, rgba(22, 22, 29, 0.5) 60%, rgba(22, 22, 29, 0) 86%);
@@ -71,7 +71,7 @@ li:nth-child(2):before {
  right: 0;
 }
 
-li:nth-child(2):after, li:nth-child(3):after {
+li:nth-child(2):after {
   bottom: -2rem;
   right: 0;
  }

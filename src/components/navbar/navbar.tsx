@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="fixed top-10 right-10 z-10">
+      <div className="fixed top-10 right-10 z-20">
         <button
           type="button"
           onClick={() => {
@@ -29,24 +29,33 @@ const Navbar: React.FC = () => {
               isNavOpen ? `opacity-100 ${activated}` : "opacity-0"
             }`}
           >
-            <li className={`mb-16 ${isNavOpen ? activated : ""}`}>
+            <li
+              className={`mb-16 ${isNavOpen ? activated : ""}`}
+              onClick={() => setIsNavOpen(false)}
+            >
               <a href="#">ABOUT</a>
             </li>
-            <li className={`mb-16 relative ${isNavOpen ? activated : ""}`}>
+            <li
+              className={`mb-16 relative ${isNavOpen ? activated : ""}`}
+              onClick={() => setIsNavOpen(false)}
+            >
               <a href="#">SKILLS</a>
             </li>
-            <li className={`mb-16 relative ${isNavOpen ? activated : ""}`}>
+            <li
+              className={`mb-16 relative ${isNavOpen ? activated : ""}`}
+              onClick={() => setIsNavOpen(false)}
+            >
               <a href="#">PROJECTS</a>
             </li>
-            <li className="">
+            {/* <li className="">
               <a href="#">RANDOM</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
       {isNavOpen ? (
         <div
-          className="w-screen h-screen bg-transparent absolute"
+          className="w-screen h-screen bg-transparent absolute z-10"
           onClick={() => setIsNavOpen(false)}
         />
       ) : null}
