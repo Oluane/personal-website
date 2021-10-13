@@ -4,16 +4,16 @@ import "@fontsource/lato";
 
 import React from "react";
 
-import { Hero } from "@src/components/hero/hero";
+import { HeroSection } from "@src/components/hero-section/hero-section";
 import { Layout } from "@src/components/layout/layout";
-// import { SecondPart } from "@src/components/second-part";
+import { ProjectsSection } from "@src/components/projects-section/projects-section";
 
 const IndexPage: React.FC = () => {
   return (
     <main className="h-screen overflow-y-hidden ">
       <Layout>
-        <Hero />
-        {/* <SecondPart /> */}
+        <HeroSection />
+        <ProjectsSection />
       </Layout>
     </main>
   );

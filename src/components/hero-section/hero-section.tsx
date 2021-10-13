@@ -1,8 +1,8 @@
 import React from "react";
 
-import { wip } from "@src/components/hero/hero.module.css";
+import { wip } from "@src/components/hero-section/hero-section.module.css";
 
-const Hero: React.FC = () => {
+const HeroSection: React.FC = () => {
   return (
     <div className="h-screen w-screen bg-gradient-radial-ellipse-b from-lighter-eigengrau to-eigengrau flex">
       <div className="w-4/5 m-auto flex justify-center">
@@ -19,4 +19,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export { Hero };
+export { HeroSection };
