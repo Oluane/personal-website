@@ -31,7 +31,7 @@ module.exports = {
       },
       boxShadow: {
         "menu-decorators":
-          "5px 10px 0px 6px rgba(0,0,0,0.15), -12px -7px 0px 9px rgba(0,0,0,0.15)",
+          "12px 15px 0px 6px rgba(0,0,0,0.15), -13px -25px 0px 9px rgba(0,0,0,0.15)",
       },
       fontFamily: { megrim: "Megrim", lato: "Lato" },
     },
