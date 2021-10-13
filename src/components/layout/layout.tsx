@@ -4,18 +4,18 @@ import { Contact } from "../contact/contact";
 import {
   container,
   horizontalWrapper,
-} from "@src/components/layout/layout.module.css";
+} from "@src/components/layout/layout.module.scss";
 import { Navbar } from "@src/components/navbar/navbar";
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <div>
+    <>
       <Navbar />
       <div className={container}>
         <div className={horizontalWrapper}>{children}</div>
       </div>
       <Contact />
-    </div>
+    </>
   );
 };
 

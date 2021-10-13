@@ -1,3 +1,4 @@
+import "@src/styles/reset.css";
 import "@src/styles/global.css";
 import "@fontsource/megrim";
 import "@fontsource/lato";
@@ -10,7 +11,7 @@ import { ProjectsSection } from "@src/components/projects-section/projects-secti
 
 const IndexPage: React.FC = () => {
   return (
-    <main className="h-screen overflow-y-hidden ">
+    <main>
       <Layout>
         <HeroSection />
         <ProjectsSection />

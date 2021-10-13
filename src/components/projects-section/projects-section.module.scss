@@ -1,0 +1,12 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #831843;
+
+  h2 {
+    font-family: "Megrim", cursive;
+    font-size: 5rem;
+    color: hsl(240, 14%, 10%);
+    filter: drop-shadow(1px, 1px, 1px, hsl(240, 14%, 10%));
+  }
+}

@@ -5,11 +5,12 @@ import { LinkedinIcon } from "../icons/linkedin-icon";
 import {
   iconDropFilter,
   scaleHover,
-} from "@src/components/contact/contact.module.css";
+  container,
+} from "@src/components/contact/contact.module.scss";
 
 const Contact: React.FC = () => {
   return (
-    <div className="fixed bottom-4 left-10 h-36 flex flex-col-reverse justify-around">
+    <div className={container}>
       <a href="https://github.com/Oluane" target="_blank" rel="noreferrer">
         <GithubIcon className={iconDropFilter + " " + scaleHover} />
       </a>
