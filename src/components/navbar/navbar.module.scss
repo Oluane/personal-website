@@ -1,3 +1,5 @@
+@import "@src/styles/global-variables.scss";
+
 .container {
   position: fixed;
   top: 2.5rem;
@@ -14,19 +16,19 @@
       height: 0.2rem;
       width: 100%;
       display: block;
-      background: rgba(243, 244, 246, 1);
+      background: $light-grey;
       background: linear-gradient(
         90deg,
         rgba(209, 213, 219, 1) 23%,
         rgba(0, 0, 0, 0) 24%,
         rgba(0, 0, 0, 0) 38%,
-        rgba(243, 244, 246, 1) 39%
+        $light-grey 39%
       );
       border-radius: 0.2rem;
       transition: transform 550ms 100ms, margin 250ms, height 550ms,
         opacity 350ms;
-      filter: drop-shadow(-1px 1px 1px #312e81)
-        drop-shadow(1px -1px 1px #831843);
+      filter: drop-shadow(-1px 1px 1px $indigo-900)
+        drop-shadow(1px -1px 1px $pink-900);
     }
 
     span:nth-of-type(2) {
@@ -36,8 +38,8 @@
 
     span:nth-of-type(odd) {
       transform: rotate(180deg);
-      filter: drop-shadow(-1px 1px 1px #831843)
-        drop-shadow(1px -1px 1px #312e81);
+      filter: drop-shadow(-1px 1px 1px $pink-900)
+        drop-shadow(1px -1px 1px $indigo-900);
     }
 
     span.activated {
@@ -63,7 +65,7 @@
     right: -10rem;
     top: -10rem;
     border-radius: 50%;
-    background-color: hsla(240, 14%, 10%, 1);
+    background-color: $eigengrau;
     width: 0;
     height: 0;
     box-shadow: none;
@@ -80,7 +82,7 @@
   }
 
   ul {
-    color: rgba(243, 244, 246, 1);
+    color: $light-grey;
     width: 80%;
     font-family: "Megrim", cursive;
     text-align: right;
@@ -112,14 +114,14 @@
       height: 0.1rem;
       border-radius: 0.2rem;
       position: absolute;
-      background-color: rgba(243, 244, 246, 0);
+      background-color: $light-grey;
       opacity: 0;
     }
 
     li.activated:nth-child(2):before,
     li.activated:nth-child(2):after {
       opacity: 1;
-      background-color: rgba(243, 244, 246, 1);
+      background-color: $light-grey;
       background-image: linear-gradient(
         90deg,
         rgba(22, 22, 29, 1) 23%,

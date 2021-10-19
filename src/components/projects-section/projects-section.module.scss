@@ -1,12 +1,14 @@
+@import "@src/styles/global-variables.scss";
+
 .container {
   height: 100vh;
   width: 100vw;
-  background-color: #831843;
+  background-color: $indigo-900;
 
   h2 {
     font-family: "Megrim", cursive;
     font-size: 5rem;
-    color: hsl(240, 14%, 10%);
-    filter: drop-shadow(1px, 1px, 1px, hsl(240, 14%, 10%));
+    color: $eigengrau;
+    filter: drop-shadow(1px 1px 1px $eigengrau);
   }
 }

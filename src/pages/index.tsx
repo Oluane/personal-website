@@ -1,5 +1,5 @@
 import "@src/styles/reset.css";
-import "@src/styles/global.css";
+import "@src/styles/global.scss";
 import "@fontsource/megrim";
 import "@fontsource/lato";
 
