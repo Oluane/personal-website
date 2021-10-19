@@ -4,7 +4,7 @@ import { container } from "@src/components/projects-section/projects-section.mod
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section className={container}>
+    <section className={container} id="projects">
       <h2>Projects</h2>
     </section>
   );

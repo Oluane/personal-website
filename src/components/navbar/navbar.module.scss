@@ -91,6 +91,7 @@
     padding-top: 12rem;
     opacity: 0;
     transition: opacity 350ms ease;
+    letter-spacing: 0.2rem;
 
     &.activated {
       opacity: 1;
@@ -99,6 +100,16 @@
 
     li {
       margin-bottom: 4rem;
+    }
+
+    a {
+      filter: drop-shadow(0px 0px 1px $light-grey);
+
+      &:hover {
+        filter: drop-shadow(0px 0px 2px $light-grey)
+          drop-shadow(0px 1px 0px $pink-900)
+          drop-shadow(-1px 0px 0px $indigo-900);
+      }
     }
 
     li:nth-child(2),

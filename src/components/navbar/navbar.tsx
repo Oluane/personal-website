@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
               className={isNavOpen ? activated : ""}
               onClick={() => setIsNavOpen(false)}
             >
-              <a href="#">PROJECTS</a>
+              <a href="#projects">PROJECTS</a>
             </li>
             {/* <li className="">
               <a href="#">RANDOM</a>
