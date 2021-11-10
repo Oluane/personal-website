@@ -15,7 +15,7 @@
 
 .horizontalWrapper {
   display: flex;
-  width: 200vw;
+  width: max-content;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   overflow-x: auto;
