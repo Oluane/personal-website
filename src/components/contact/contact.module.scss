@@ -1,0 +1,20 @@
+@import "@src/styles/global-variables.scss";
+
+.container {
+  position: fixed;
+  bottom: 1rem;
+  left: 2.5rem;
+  height: 9rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+
+.iconDropFilter {
+  filter: drop-shadow(-1px 2px 1px $indigo-900)
+    drop-shadow(1px -2px 1px $pink-900);
+}
+
+.scaleHover:hover {
+  transform: scale(1.1);
+}
