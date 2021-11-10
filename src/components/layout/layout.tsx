@@ -5,12 +5,12 @@ import {
   container,
   horizontalWrapper,
 } from "@src/components/layout/layout.module.scss";
-import { Navbar } from "@src/components/navbar/navbar";
+// import { Navbar } from "@src/components/navbar/navbar";
 
 const Layout: React.FC = ({ children }) => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={container}>
         <div className={horizontalWrapper}>{children}</div>
       </div>
