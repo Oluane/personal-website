@@ -1,10 +1,14 @@
 import React from "react";
-import "css-doodle";
+import { Helmet } from "react-helmet";
 
 const Background: React.FC = () => {
   return (
-    <css-doodle>
-      {` :doodle {
+    <>
+      <Helmet>
+        <script src="https://unpkg.com/css-doodle@0.21.6/css-doodle.min.js"></script>
+      </Helmet>
+      <css-doodle>
+        {` :doodle {
           @grid: 10x10;
           @size: 100vw 100vh;
           position: fixed;
@@ -28,7 +32,8 @@ const Background: React.FC = () => {
         @shape: hypocycloid 4;
         
         opacity: @rand(.3, .9); `}
-    </css-doodle>
+      </css-doodle>
+    </>
   );
 };
 

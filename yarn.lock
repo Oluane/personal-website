@@ -3346,11 +3346,6 @@ css-declaration-sorter@^6.0.3:
   dependencies:
     timsort "^0.3.0"
 
-css-doodle@^0.21.6:
-  version "0.21.6"
-  resolved "https://registry.yarnpkg.com/css-doodle/-/css-doodle-0.21.6.tgz#866b005a3e6dfb24b2fe82a669f73eab8acfe14a"
-  integrity sha512-w9cZpmGH7OC/ufe0GHnqPS4kVXlEV7gj9RaLnqbxwIIEFN+pHckS/U9nnClHESWv0RaYcNhFItWc6xAyR0/Nxw==
-
 css-loader@^5.0.1:
   version "5.2.7"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.2.7.tgz#9b9f111edf6fb2be5dc62525644cbc9c232064ae"

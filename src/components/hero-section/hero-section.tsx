@@ -1,5 +1,4 @@
 import React from "react";
-import "css-doodle";
 
 import { Background } from "../background/background";
 import {
