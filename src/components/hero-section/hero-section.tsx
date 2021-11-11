@@ -1,5 +1,7 @@
 import React from "react";
+import "css-doodle";
 
+import { Background } from "../background/background";
 import {
   container,
   wipWrapper,
@@ -10,6 +12,7 @@ import {
 const HeroSection: React.FC = () => {
   return (
     <div className={container}>
+      <Background />
       <div className={wipWrapper}>
         <p>Work in progress</p>
         <div className={dotsWrapper}>
