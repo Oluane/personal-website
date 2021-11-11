@@ -10,9 +10,11 @@ import {
 } from "@src/components/hero-section/hero-section.module.scss";
 
 const HeroSection: React.FC = () => {
+  const isSSR = typeof window === "undefined" || typeof document === undefined;
+
   return (
     <div className={container}>
-      <Background />
+      {!isSSR ? <Background /> : <></>}
       <div className={wipWrapper}>
         <p>Work in progress</p>
         <div className={dotsWrapper}>
